@@ -1,0 +1,228 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+   padding-bottom: -1rem;
+}
+
+.container div img{
+    width: 100%;
+    height: 73%;
+}
+.buttonDiv{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* gap: 1rem; */
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
+     
+}
+
+.buttonDiv button{
+    padding: 10px 10px;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    
+
+}
+
+.icons{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.textContainer{
+    display: flex;
+    gap: 2px;
+    
+}
+.textContainer span{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.textContainer p{
+    font-weight: 700;
+}
+
+.container h1{
+    color: rgb(46, 46, 71);
+}
+
+.textDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    align-items: center;
+    padding: 2rem 0;
+    height: 20%;
+    
+    
+
+
+}
+
+.imageContainer{
+    height: 35%;
+   
+    width: 100%;
+    
+}
+
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+   
+    gap: 1.4rem;
+
+    padding: 0 1rem;
+    height: 90%;
+    padding-bottom: 0;
+}
+
+
+.button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #003057;
+    color: white;
+    border: none;
+}
+
+.lowerContainer{
+    display: flex;
+    justify-content: space-between;
+
+}
+.lowerContainer p:nth-child(2){
+    text-align: center;
+}
+.lowerContainer p{
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.lowerContainer a{
+    color:#003057;
+    /* padding: 10px; */
+}
+
+@media all and (min-width:765px) and (max-width:1080px){
+.container{
+    display: block;
+    
+}
+
+.container >div{
+    padding: 2rem;
+}
+
+.buttonDiv{
+    width: 100%;
+ 
+    display: flex;
+    gap: 5rem;
+  
+}
+.buttonDiv button{
+    font-size: 1.2rem;
+    display: flex;
+}
+.textDiv{
+   
+    height: 3rem;
+    padding: 3rem 0;
+}
+
+.lowerContainer button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.textContainer{
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+}
+
+.textContainer span{
+    font-size: 1.2rem;
+}
+.textContainer p{
+    font-size: 1.2rem;
+
+}
+
+.imageContainer{
+   
+    height: 18rem;
+}
+
+.lowerContainer{
+    display: flex;
+    align-items: center;
+}
+
+}
+
+@media all and (min-width:200px) and (max-width:765px){
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .h1tag{
+            font-size: 1.2rem;
+        }
+
+        .lowerContainer{
+       
+            display: flex;
+            align-items: center;
+            
+            gap: 2rem;
+        }
+        .lowerContainer .button{
+            
+            font-size: 0.7rem;
+            padding: 0;
+            width: 9rem;
+            display: flex;
+            align-items: center;
+            height: 3rem;
+            justify-content: center;
+            gap: 2px;
+            margin-top: 0.1rem;
+        }
+        .lowerContainer div{
+
+            text-align: center;
+            
+        }
+
+        .lowerContainer div p{
+            font-size: 0.7rem;
+        }
+
+        .lowerContainer  a{
+            font-size: 0.8rem;
+
+           
+        }
+        
+}

@@ -1,0 +1,28 @@
+.button{
+
+    display: flex;
+    padding: 15px 20px;
+    align-items: center;
+    background-color: white;
+
+    color: #003057;
+
+    border: 1px solid rgb(14, 14, 138);
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0;
+    
+}
+
+.icons{
+
+    font-size: 18px;
+    font-weight: 900;
+}
+.button:hover{
+  background-color:#003057;
+  color: white;
+
+}
+
+

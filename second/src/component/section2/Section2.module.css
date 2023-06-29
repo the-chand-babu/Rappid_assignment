@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    width: 100%;
+
+    margin: auto;
+    justify-content: space-between;
+
+    
+    margin-top: 2rem;
+
+    align-items: center;
+
+}
+
+.container p{
+    font-size: 20px;
+
+    font-weight: 450;
+}
+
+.container div{
+    display: flex;
+    gap: 4rem;
+
+    align-items: center;
+
+}
+
+
+@media all and (min-width:765px) and (max-width:1080px){
+    
+.container{
+    display: block;
+    text-align: center;
+}
+.container p{
+    font-weight: 800;
+
+}
+.container div{
+    width: 80%;
+    margin: auto;
+    display: flex;
+   gap: 2rem;
+   justify-content: center;
+
+    margin-top: 1rem;
+
+}
+}
+
+
+@media all and (min-width:200px) and (max-width:765px){
+        .container{
+            width: 100%;
+            display: block;
+            margin: auto;
+            text-align: center;
+        }
+
+        .container div{
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            width: 60%;
+
+            margin: auto;
+        }
+}

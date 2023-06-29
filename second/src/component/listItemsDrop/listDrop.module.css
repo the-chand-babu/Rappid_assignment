@@ -1,0 +1,70 @@
+.container{
+    /* border: 1px solid red; */
+    width: 100%;
+    position: relative;
+    
+
+}
+.noneDisplay{
+    display: none;
+}
+.openDropdown ul{
+    display: block;
+}
+
+.container button{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: none;
+    border: none;
+    color: rgb(44, 44, 75);
+
+    padding: 0 2rem;
+    font-weight: 800;
+
+    background-color: rgb(177, 176, 176);
+    padding: 10px;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+ul{
+    list-style: none;
+    padding-bottom: 10px;
+   
+}
+ul li{
+    margin-top: 5px;
+    width: 50%;
+    padding-left: 20px;
+    padding: 10px;
+}
+
+ul p{
+    font-weight: 600;
+    margin-left: -0.5rem;
+    margin: 10px 0;
+}
+
+ul li:hover{
+    background-color: grey;
+
+}
+
+@media all and (min-width:765px) and (max-width:1080px){
+    .container{
+
+        background-color: transparent;
+    }
+   .container ul{
+    padding-left: 1rem;
+   }
+}
+
+@media all and (min-width:200px) and (max-width:765px){
+    .container ul{
+        padding-left: 1rem ;
+    }
+}

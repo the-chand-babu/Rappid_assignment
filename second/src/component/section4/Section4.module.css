@@ -1,0 +1,54 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+
+.gridContainer div{
+    padding: 1.5rem;
+    background-color: rgb(243, 240, 240);
+    text-align: center;
+}
+h3{
+    margin: 1rem 0;
+    margin-top: -1rem;
+}
+img{
+    width: 100%;
+}
+
+.para1{
+    margin-top: 0.5rem;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 1px solid #003057;
+    color: #003057;
+    font-weight: 600;
+    margin-top: 0.7rem;
+}
+
+@media all and (min-width:765px) and (max-width:1080px){
+    h3{
+
+        margin:2rem;
+    }
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+
+@media all and (min-width:200px) and (max-width:765px){
+    h3{
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

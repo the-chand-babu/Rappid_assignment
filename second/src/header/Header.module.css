@@ -1,0 +1,198 @@
+*{
+    
+    margin: 0;
+}
+
+.header{
+    height: 3.5rem;
+
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logoContainer{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin-left: 0.1rem;
+}   
+
+.logoContainer img{
+    width: 7rem;
+    height:90%;
+    border: none;
+    
+}
+
+.list{
+    display: flex;
+   width: 40%;
+    list-style: none;
+   justify-content: space-between;
+
+   font-weight: 800;
+    color: grey;
+    height: 100%;
+    align-items: center;
+    margin-right: 1rem;
+    
+}
+.list li{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    cursor: pointer;
+
+}
+
+.list li:hover{
+    background-color: rgb(218, 214, 214);
+    
+    align-items: center;
+    color: rgb(19, 19, 86);
+    border-bottom: 5px solid black;
+    
+
+}
+
+.icons{
+    display: none;
+}
+
+.DropDownContainer{
+    width: 100%;
+    position: absolute;
+   
+    top: 0;
+    margin-top: 60px;
+    background-color: rgb(224, 221, 221);
+    display: none;
+
+}
+@media all and (min-width:765px) and (max-width:1080px){
+        .header{
+            width: 100%;
+           
+            
+        }
+        .list{
+          display: none;
+        }
+
+        .icons{
+            display: block;
+            margin-right: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .closeMenu{
+            display: none;
+        }
+        .openMenu{
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+        .active .closeMenu{
+            display: block;
+            font-weight: 900;
+            cursor: pointer;
+        }
+        .active .openMenu{
+            display: none;
+           
+        }
+
+        .active .DropDownContainer{
+            width: 95%;
+            position: absolute;
+            display: block;
+            top: 0;
+            margin-top: 60px;
+            background-color: rgb(224, 221, 221);
+            margin-top: 5rem;
+         
+        }
+        .listDrop{
+            display: none;
+        }
+
+        .logoContainer img{
+            width: 5rem;
+            height:90%;
+            border: none;
+            
+        }
+
+}
+
+@media all and (min-width:200px) and (max-width:765px){
+    .header{
+        width: 100%;
+       
+        
+    }
+    .list{
+      display: none;
+    }
+    
+
+    .icons{
+        display: block;
+        margin-right: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .closeMenu{
+        display: none;
+    }
+    .openMenu{
+        cursor: pointer;
+        font-weight: 800;
+        
+    }
+
+    .active .closeMenu{
+        display: block;
+        font-weight: 900;
+        cursor: pointer;
+    }
+    .active .openMenu{
+        display: none;
+       
+    }
+    .list{
+        display: none   ;
+    }
+
+    .active .list{
+        display: none;
+    }
+    
+    .active .DropDownContainer{
+        width: 100%;
+        position: absolute;
+        display: block;
+        top: 0;
+        margin-top: 78px;
+        background-color: rgb(224, 221, 221);
+        width: 88%;
+    }
+
+    .listDrop{
+        display: none;
+    }
+
+    .logoContainer img{
+        width: 5rem;
+        height:90%;
+        border: none;
+        
+    }
+}

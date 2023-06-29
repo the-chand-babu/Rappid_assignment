@@ -1,0 +1,42 @@
+.loremContainer{
+    
+    text-align: start;
+    margin-top: 16px;
+    margin-left: 1rem;
+
+}
+
+h5{
+    color: #003057;
+    
+
+}
+
+.loremContainer .btndata{
+    display: flex;;
+    border: none;
+    gap: 5px;
+    align-items: center;
+    padding-left: 0;
+    padding: 0;
+    margin-top: 8px;
+    color: #003057;
+}
+
+
+@media all and (min-width:200px) and (max-width:765px){
+    .loremContainer{
+
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .loremContainer h5{
+        font-size: 1.4rem;
+    }
+    .loremContainer .btndata{
+        font-size: 1.2rem;
+    }
+}

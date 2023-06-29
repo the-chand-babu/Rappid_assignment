@@ -1,0 +1,96 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.grid{
+    position: relative;
+}
+.grid img{
+    width: 100%;
+    opacity: 0.6;
+}
+
+.txtDiv{
+    position: absolute;
+    top: 7rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7rem;
+    margin-left: 2rem;
+    
+}
+.txtDiv h4{
+    width: 12rem;
+
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.txtDiv button{
+    font-weight: 800;
+    background-color: transparent;
+    border: 1px solid white;
+    color: black;
+}
+
+
+@media all and (min-width:765px) and (max-width:1080px){
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .grid{
+        position: relative;
+    }
+    .txtDiv{
+        position: absolute;
+        top: 4rem;
+        color: white;
+
+        display: flex;
+        align-items: center;
+
+        gap: 2rem;
+        margin-left: 2rem;
+        
+    }
+    .txtDiv h4{
+        font-size: 1.5rem;
+    }
+
+    
+}
+
+@media all and (min-width:200px) and (max-width:765px){
+    
+    .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+    .grid{
+        position: relative;
+    }
+    .txtDiv{
+        position: absolute;
+        top: 3.5rem;
+        color: white;
+
+        display: flex;
+        align-items: center;
+
+        gap: 1rem;
+        margin-left: 1rem;
+        
+    }
+    .txtDiv h4{
+        font-size: 1.5rem;
+    }
+}
